@@ -1,0 +1,110 @@
+.div11 {
+  position: absolute;
+  top: 14px;
+  left: 116px;
+  background: linear-gradient(rgba(89, 25, 25, 0.2), rgba(89, 25, 25, 0.2)),
+    #0a0a0a;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  display: inline-block;
+  width: 53px;
+  height: 18px;
+}
+.wrapper3 {
+  position: absolute;
+  top: 457px;
+  left: 37px;
+  border-radius: var(--br-8xs);
+  background-color: var(--color-khaki);
+  width: 285px;
+  height: 47px;
+  overflow: hidden;
+  cursor: pointer;
+  font-size: var(--font-size-base);
+}
+.div12,
+.wrapper4 {
+  position: absolute;
+  top: 17px;
+  left: 19px;
+}
+.wrapper4 {
+  top: 338px;
+  left: 37px;
+  border-radius: var(--br-11xs);
+  background-color: var(--color-white);
+  border: 1px solid var(--color-lightgray-100);
+  box-sizing: border-box;
+  width: 285px;
+  height: 48px;
+  overflow: hidden;
+}
+.div13,
+.div14,
+.wrapper6 {
+  position: absolute;
+  top: 17px;
+  left: 13px;
+}
+.div14,
+.wrapper6 {
+  left: 11px;
+}
+.wrapper6 {
+  top: 386px;
+  left: 37px;
+  border-radius: var(--br-11xs);
+  background-color: var(--color-white);
+  border-right: 1px solid var(--color-lightgray-200);
+  border-bottom: 1px solid var(--color-lightgray-200);
+  border-left: 1px solid var(--color-lightgray-200);
+  box-sizing: border-box;
+  width: 285px;
+  height: 48px;
+  overflow: hidden;
+}
+.div15 {
+  position: absolute;
+  top: 527px;
+  left: 73px;
+  font-size: var(--font-size-sm);
+  color: var(--color-black);
+  display: inline-block;
+  width: 203px;
+  height: 17px;
+  cursor: pointer;
+}
+.emoji1 {
+  position: relative;
+  width: 80px;
+  height: 80px;
+}
+.smile {
+  letter-spacing: 0.45em;
+}
+.scheduler,
+.smile {
+  margin: 0;
+}
+.smile-scheduler {
+  position: absolute;
+  top: calc(50% - 226px);
+  left: calc(50% - 35px);
+  font-size: 32px;
+  font-weight: 600;
+  color: var(--color-black);
+  display: inline-block;
+  width: 177px;
+  height: 80px;
+}
+.android-large-11 {
+  position: relative;
+  background-color: var(--color-white);
+  width: 100%;
+  height: 800px;
+  overflow: hidden;
+  text-align: left;
+  font-size: 11.63px;
+  color: var(--color-gray);
+  font-family: var(--font-inter);
+}

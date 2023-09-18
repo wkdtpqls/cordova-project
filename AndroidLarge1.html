@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="initial-scale=1, width=device-width" />
+
+    <link rel="stylesheet" href="./global.css" />
+    <link rel="stylesheet" href="./AndroidLarge1.css" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Noto Sans KR:wght@500&display=swap"
+    />
+  </head>
+  <body>
+    <div class="android-large-11">
+      <div class="wrapper3" id="frameContainer">
+        <div class="div11">로그인</div>
+      </div>
+      <div class="wrapper4">
+        <div class="div12">아이디 입력</div>
+      </div>
+      <div class="wrapper4">
+        <div class="div13">아이디 입력</div>
+      </div>
+      <div class="wrapper6">
+        <div class="div14">비밀번호 입력</div>
+      </div>
+      <div class="div15" id="text4">아직 회원이 아니시라면? 회원가입</div>
+      <div class="emoji1"></div>
+      <div class="smile-scheduler">
+        <p class="smile">SMILE</p>
+        <p class="scheduler">Scheduler</p>
+      </div>
+    </div>
+
+    <script>
+      var frameContainer = document.getElementById("frameContainer");
+      if (frameContainer) {
+        frameContainer.addEventListener("click", function (e) {
+          window.location.href = "./AndroidLarge3.html";
+        });
+      }
+      
+      var text4 = document.getElementById("text4");
+      if (text4) {
+        text4.addEventListener("click", function (e) {
+          window.location.href = "./AndroidLarge2.html";
+        });
+      }
+      </script>
+  </body>
+</html>
