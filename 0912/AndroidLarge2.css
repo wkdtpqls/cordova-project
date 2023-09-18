@@ -1,0 +1,148 @@
+.div {
+  position: absolute;
+  top: 124px;
+  left: 137px;
+  font-size: 20px;
+  font-weight: 500;
+  font-family: var(--font-noto-sans-kr);
+}
+.div1,
+.wrapper {
+  position: absolute;
+  top: 17px;
+  left: 10px;
+}
+.wrapper {
+  top: 237px;
+  left: 34px;
+  background-color: var(--color-white);
+  border: 1px solid var(--color-lightgray-100);
+  box-sizing: border-box;
+  width: 210px;
+  height: 48px;
+  overflow: hidden;
+  color: var(--color-gray);
+}
+.span {
+  color: var(--color-darkorange);
+}
+.container,
+.div2,
+.div3 {
+  position: absolute;
+  top: 221px;
+  left: 34px;
+}
+.container,
+.div3 {
+  top: 17px;
+  left: 8px;
+}
+.container {
+  top: 317px;
+  left: 34px;
+  background-color: var(--color-white);
+  border: 1px solid var(--color-lightgray-100);
+  box-sizing: border-box;
+  width: 291px;
+  height: 48px;
+  overflow: hidden;
+  color: var(--color-gray);
+}
+.div4 {
+  top: 300px;
+}
+.div4,
+.div6,
+.frame,
+.frame-div {
+  position: absolute;
+  left: 34px;
+}
+.frame {
+  top: 491px;
+  background-color: var(--color-white);
+  border: 1px solid var(--color-lightgray-100);
+  box-sizing: border-box;
+  width: 291px;
+  height: 48px;
+  overflow: hidden;
+  color: var(--color-gray);
+}
+.div6,
+.frame-div {
+  top: 474px;
+}
+.frame-div {
+  top: 404px;
+  background-color: var(--color-white);
+  border: 1px solid var(--color-lightgray-100);
+  box-sizing: border-box;
+  width: 291px;
+  height: 48px;
+  overflow: hidden;
+  color: var(--color-gray);
+}
+.div8,
+.div9,
+.wrapper1 {
+  position: absolute;
+  top: 387px;
+  left: 34px;
+}
+.div9,
+.wrapper1 {
+  top: 17px;
+  left: 13px;
+}
+.wrapper1 {
+  top: 235px;
+  left: 249px;
+  border-radius: 3px;
+  background-color: var(--color-khaki);
+  width: 76px;
+  height: 50px;
+  overflow: hidden;
+  font-size: 13px;
+}
+.div10 {
+  position: absolute;
+  top: 14px;
+  left: 116px;
+  background: linear-gradient(rgba(89, 25, 25, 0.2), rgba(89, 25, 25, 0.2)),
+    #0a0a0a;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  display: inline-block;
+  width: 67px;
+  height: 18px;
+}
+.wrapper2 {
+  position: absolute;
+  top: 612px;
+  left: 34px;
+  border-radius: var(--br-8xs);
+  background-color: var(--color-khaki);
+  width: 290px;
+  height: 47px;
+  overflow: hidden;
+  font-size: var(--font-size-base);
+}
+.android-large-2-child {
+  position: absolute;
+  top: 53.44px;
+  left: 24.7px;
+  width: 12.11px;
+  height: 19.29px;
+}
+.android-large-2 {
+  position: relative;
+  background-color: var(--color-white);
+  width: 100%;
+  height: 800px;
+  overflow: hidden;
+  text-align: left;
+  font-size: 11.63px;
+  color: var(--color-black);
+  font-family: var(--font-inter);
+}

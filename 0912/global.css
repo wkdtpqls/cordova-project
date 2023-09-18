@@ -1,0 +1,28 @@
+body {
+  margin: 0;
+  line-height: normal;
+}
+
+:root {
+  /* fonts */
+  --font-inter: Inter;
+  --font-noto-sans-kr: "Noto Sans KR";
+
+  /* font sizes */
+  --font-size-base: 16px;
+  --font-size-sm: 14px;
+  --font-size-xs-6: 11.6px;
+
+  /* Colors */
+  --color-white: #fff;
+  --color-khaki: #ece390;
+  --color-black: #000;
+  --color-darkorange: #f48c2b;
+  --color-lightgray-100: #d3d3d3;
+  --color-lightgray-200: #d0d0d0;
+  --color-gray: #898989;
+
+  /* Border radiuses */
+  --br-8xs: 5px;
+  --br-11xs: 2px;
+}
