@@ -14,10 +14,10 @@
 
 <hr>
 
-![Android Large - 3](https://github.com/wkdtpqls/cordova-project/assets/112832631/145d9f24-3556-4680-aadf-2c83ef776c66)
+![Android Large - 2](https://github.com/wkdtpqls/cordova-project/assets/112832631/30807c9f-58ac-47a1-812d-a00f6f1d3b9f)
+
 
 ### 메인 페이지
 <hr>
 
-![Android Large - 2](https://github.com/wkdtpqls/cordova-project/assets/112832631/30807c9f-58ac-47a1-812d-a00f6f1d3b9f)
-
+![Android Large - 3](https://github.com/wkdtpqls/cordova-project/assets/112832631/145d9f24-3556-4680-aadf-2c83ef776c66)
