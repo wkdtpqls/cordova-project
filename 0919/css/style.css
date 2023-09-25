@@ -1,0 +1,275 @@
+@charset "UTF-8";
+@font-face {
+    font-family: 'Pretendard-Regular';
+    src: url('https://cdn.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Regular.woff') format('woff');
+    font-weight: 400;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'NeoDunggeunmoPro-Regular';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2302@1.0/NeoDunggeunmoPro-Regular.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+}
+
+body {
+    background-color: #f5f5f5;
+    color: #2f2f2f;
+    font-size: 16px;
+    font-family: 'Pretendard-Regular', sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+}
+
+section {
+    background-color: #fff;
+    border-radius: 10px;
+    padding: 30px;
+    margin-bottom: 20px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.wrapper {
+    width: 70%;
+    max-width: 800px;
+    margin: 20px auto;
+    box-shadow: 0 19px 38px rgba(0, 0, 0, 0.15), 0 15px 12px rgba(0, 0, 0, 0.12);
+}
+
+hr {
+    margin-bottom: 30px;
+}
+
+.title {
+    width: 70%;
+    text-align: right;
+    font-style: italic;
+    margin-top: 20px;
+}
+
+.title h1 {
+    font-size: 36px;
+    color: #333;
+    margin: 0;
+}
+
+h2 {
+    margin: 0 0 20px 0;
+    font-size: 1.5rem;
+    color: #095fc2;
+}
+
+#my_info img {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    margin-right: 20px;
+    border: 4px solid #f5f5f5;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+table {
+    display: inline-block;
+    border-collapse: collapse;
+    border-spacing: 0;
+    vertical-align: top;
+    margin-top: 20px;
+    width: 100%;
+    max-width: 400px;
+}
+
+th {
+    text-align: left;
+    padding-right: 20px;
+    color: #777;
+}
+
+th, td {
+    font-size: 16px;
+    padding: 10px 0;
+}
+
+#about, #contact, #skill, #project {
+    margin-top: 40px;
+}
+
+#myname th {
+    display: none;
+}
+
+#myname td {
+    display: block;
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+a {
+    color: #007bff;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+ul li {
+    color: #333;
+    display: flex;
+    align-items: center;
+}
+
+/* 학력 부분 스타일 */
+/* #education ul {
+    list-style: none;
+    font-size: 16px;
+    color: #333;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+} */
+
+/* 학교 이름 스타일 */
+.school {
+    font-weight: bold;
+    font-size: 1.2rem;
+    margin-bottom: 5px; /* 아래로의 간격 조절 */
+}
+
+.major {
+    font-size: 1rem; /* 원하는 폰트 크기로 조절 */
+    margin-top: 5px; /* 위로의 간격 조절 */
+}
+
+/* 기간 스타일 */
+.period {
+    font-size: 0.9rem;
+    color: #777;
+}
+
+.container {
+    display: flex;
+    flex-direction: row;
+}
+
+.edu, .skill {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+/* ul li::before {
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    vertical-align: middle;
+    margin-right: 10px;
+    content: "";
+}
+ */
+
+#skill ol {
+    list-style: none;
+    padding: 0;
+}
+
+#skill li {
+    display: inline-block;
+    background-color: #007bff;
+    padding: 4px 10px;
+    border-radius: 6px;
+    margin: 0 8px 8px 0;
+    color: #fff;
+    font-weight: bold;
+}
+.project {
+    display: flex;
+    justify-content: space-between;
+    background-color: #f5f5f5;
+    border-radius: 10px;
+    padding: 10px;
+    margin: 20px 0;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.project-details {
+
+  
+   padding: 10px;
+}
+
+.project-details h3 {
+    font-size: 24px;
+    color: #333;
+    margin: 0;
+    padding-bottom: 10px;
+}
+
+.project-details table {
+   
+}
+
+.project-details table td {
+    padding: 8px 0;
+    font-size: 16px;
+    color: #777;
+}
+
+.project-details table td:first-child {
+    font-weight: bold;
+    width: 30%;
+}
+
+.project-details table td:last-child {
+    text-align: left;
+
+}
+
+.project h3 {
+    font-size: 24px;
+    color: #333;
+    margin: 0;
+}
+
+
+
+
+/* #project ol {
+    list-style: none;
+    padding: 0;
+}
+
+#project li {
+    padding-bottom: 20px;
+    border-bottom: 1px solid #ddd;
+    margin-bottom: 20px;
+}
+
+#project li:last-child {
+    border-bottom: none;
+}
+
+#project video {
+    width: 100%;
+}
+
+#project a {
+    color: #007bff;
+    text-decoration: none;
+    font-weight: bold;
+    padding-right: 10px;
+}
+
+#project a:hover {
+    color: #333;
+    text-decoration: underline;
+    background-color: transparent;
+    padding-right: 0;
+} */
