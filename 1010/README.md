@@ -2,7 +2,8 @@
 
 ### Mobile jQuery 태그를 이용하여 버튼 적용하기
 
-![KakaoTalk_20231005_213657416](https://github.com/wkdtpqls/cordova-project/assets/112832631/f134d90f-5d94-4200-8cba-5569db3d4160)
+![KakaoTalk_20231015_195609198](https://github.com/wkdtpqls/cordova-project/assets/112832631/11eb3c08-3e96-470d-9af2-4cd7d67d7ea3)
+
 
 
 ### 목록
