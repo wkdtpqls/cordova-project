@@ -10,4 +10,4 @@
 |2023-09-26|<a href="https://github.com/wkdtpqls/cordova-project/tree/master/0926">4주차 레포트</a>|<a href="https://wkdtpqls.github.io/cordova-project/0926/minfo">0926</a>|
 |2023-10-03|<a href="#">5주차(추석)</a>|<a href="#">0905</a>|
 |2023-10-10|<a href="https://github.com/wkdtpqls/cordova-project/tree/master/1010">6주차 레포트</a>|<a href="https://wkdtpqls.github.io/cordova-project/1010/minfo">1010</a>|
-|2023-10-31|<a href="https://github.com/wkdtpqls/cordova-project/tree/master/1031">7주차 레포트</a>|<a href="https://wkdtpqls.github.io/cordova-project/1031/dokdo_intro">1010</a>|
+|2023-10-31|<a href="https://github.com/wkdtpqls/cordova-project/tree/master/1031">7주차 레포트</a>|<a href="https://wkdtpqls.github.io/cordova-project/1031/dokdo-intro">1010</a>|
