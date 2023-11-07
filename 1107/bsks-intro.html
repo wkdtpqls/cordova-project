@@ -1,0 +1,283 @@
+﻿<!DOCTYPE HTML>
+<html>
+<head>
+	<meta charset="utf-8"/>
+	<meta name="viewport" content="width=device-width, initial-scale=1"/>
+	<title>jQuery Mobile</title>
+	<link rel="stylesheet" href="./lib/jquery.mobile-1.4.5.min.css"/>
+	<script src="./lib/jquery-1.11.1.min.js"></script>
+	<script src="./lib/jquery.mobile-1.4.5.min.js"></script>
+	<script src="style.css"></script>
+	<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<style>
+@font-face {
+	font-family: 'SUITE-Regular';
+	src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2304-2@1.0/SUITE-Regular.woff2') format('woff2');
+	font-weight: 400;
+	font-style: normal;
+}
+* {
+	font-family: 'SUITE-Regular';
+}
+   li { list-style:none; }
+  .picture { list-style:none; padding:0; margin:0; }
+  .picture li { float:left; width:50%;}
+  .picture li a {display:block; margin:5px; border: 1px }
+  .picture li img { display:block; width:50%;  height:auto;}
+  .picture li img:hover { display:block; width:100%;  height:auto;} 
+/* 학과사진 - js */
+#container{
+	margin-bottom: 80px;
+	text-align: center;
+}
+#photo{
+  display: block;
+  width: 500px;
+  margin: 0 auto;
+  box-shadow: 0px 0px 0px rgba(0, 0, 0, 0.1);
+}
+#gallery{text-align: center;}
+ 
+#gallery > li {
+  display: inline-block;
+  margin: 0 10px;
+}
+ 
+#gallery > li > img{
+  display: block;
+  width: 150px;
+  border: 5px solid black;
+  cursor: pointer;
+}
+/* 학과사진 - jquery */
+.gallery { width: 100%; max-width: 600px; margin: 0 auto; }
+.thumb { width: 100%; margin-bottom: 3px; list-style: none; overflow: hidden; }
+.thumb li { width: 25%; float: left; text-align: center; }
+.thumb li img { width: 98%; }
+.main { width: 100%; text-align: center; }
+.main img { width: 99.5%; }
+
+</style>
+<script type="text/javascript">
+	$(document).ready(function(){
+	   $(".thumb a").click(function(){
+		   $(".main img").attr("src", $(this).attr("href"))
+							.attr("alt", $(this).children("img").attr("alt"));
+	   return false;
+	   });
+	});
+   </script>
+</head>
+
+<body>
+<div data-theme="b">
+	<div data-role="page" id="home">
+		<div data-role="header" data-theme="b">
+			<h1>부산경상대학교</h1>
+		</div>
+		<div data-role="content" style="text-align:center">
+				<img src="logo.png" >
+			<ul data-role="listview" data-inset="true">
+				<li><a href="#intro">학과소개</a></li>
+				<li><a href="#movie">학사안내</a></li>
+				<li><a href="#wizard3-1">학교기업</a></li>
+				<li><a href="#gallery">학과사진</a></li>
+				<li><a href="#gallery-js">학과사진(js)</a></li>
+				<li><a href="#gallery-jquery">학과사진(jquery)</a></li>
+			</ul>
+		</div>
+		<div data-role="footer" data-position="fixed" data-theme="b">
+			<h1>202206020 장세빈</h1>
+		</div>
+	</div>
+	
+	<div data-role="page" id="intro" data-theme="b">
+		<div data-role="header" data-theme="b">
+			<a href="#home" data-icon="arrow-l" data-direction="reverse">목록</a>			
+			<h1>학과 소개</h1>
+		</div>
+		<div data-role="content">
+				<div style="text-align:center;">
+					<img src="subbanner_02.jpg" style="width: 700px;">
+				</div>			
+			<div data-role="collapsible-set" data-theme="b" data-content-theme="e">
+				<div data-role="collapsible" data-collapsed="false">
+					<h3>학과 소개</h3>					
+					<ul>
+						<li>4차 산업혁명에 특화된 최신의 교육과정과 실습실 그리고 취업까지!!!</li>
+						<li>IT산업체 10년 이상의 경력이 풍부한 교수진의 실무중심의 프로젝트식 수업 운영</li>
+						<li>재학중 학기제 현장실습을 통한 실무형 프로젝트 참여 기회 제공</li>
+					</ul>
+				</div>
+				<div data-role="collapsible">
+					<h3>수업방식</h3>
+					<p>전공직무, 사회관계, 진로적성을 바탕으로 창의융합, 소통협업, 실용직무, 인성소양, 자기계발의 5대 역량을 갖춘 현장전문직업인력을 육성하고자 합니다.
+						이를 위하여 본 학과는 체계적인 현장실습을 위하여 수많은 기업들과 가족회사를 체결하여 상생하고 있으며, 교내입주기업인 게임/VR 전문기업 '(주)유캔스타'를 바탕으로 실무형 교육 및 취업연계를 진행하고 있습니다.
+						또한 부산인재평생교육진흥원의 '사회상생협력지원사업' 선정으로 창의융합 교육시스템을 구축하였습니다.</p>
+				</div>
+				<div data-role="collapsible" >
+					<h3>졸업 후 진로</h3>
+					<p>
+						IT솔루션 개발자, 홈페이지 개발자, 어플리케이션 개발자, 데이터 분석가 등의 자격증을 취득 가능하고, 게임·메타버스콘텐츠 전공에서 게임개발프로그래머, 게임캐릭터/배경 모델러, 게임원화가, 게임애니메이터, 게임이펙터, 가상현실/증강현실 개발자, 컴퓨터 방과 후 지도사, 코딩전문강사 등 취업, 게임회사 창업, 메타버스 크리에이터, 아바타 디자이너
+					</p>
+				</div>
+			</div>
+		</div>
+		<div data-role="footer" data-position="fixed" data-theme="b">
+			<h1>202206020 장세빈</h1>
+		</div>		
+	</div>
+	
+	<div data-role="page" id="movie" data-theme="b">
+		<div data-role="header" data-position="fixed" data-theme="b">
+			<a href="#home" data-icon="arrow-l" data-direction="reverse">목록</a>	
+			<h1>학사 안내</h1>
+		</div>
+		<div data-role="content">		
+			<div style="text-align:center;">
+				<img src="subbanner_02.jpg" style="width: 700px;">
+			</div>	
+		<div data-role="collapsible-set" data-theme="b" data-content-theme="e">
+			<div data-role="collapsible" data-collapsed="false">
+				<h3>오시는길</h3>					
+				<img src="campus_map.jpg" alt="" style="width: 600px;">
+			</div>
+			<div data-role="collapsible">
+				<h3>협력업체</h3>
+				<img src="enter_05.jpg" alt="">
+				<img src="enter_11.jpg" alt="">
+				<img src="enter_16.jpg" alt="">
+				<img src="enter_12.jpg" alt="">
+				<img src="enter_17.jpg" alt="">
+				<img src="enter_02.jpg" alt="">
+			</div>
+			
+		</div>
+	</div>
+	<div data-role="footer" data-position="fixed" data-theme="b">
+		<h1>202206020 장세빈</h1>
+	</div>		
+</div>
+
+	<div data-role="page" id="wizard3-1">
+		<div data-role="header">
+			<h1>학교기업 소개</h1>
+			<a href="#home" data-icon="arrow-l" data-direction="reverse">목록</a>			
+
+		</div>
+		<div data-role="content">
+			<div style="text-align:center;">
+				<img src="subbanner_02.jpg" style="width: 700px;">
+			</div>			
+		<div data-role="collapsible-set" data-theme="b" data-content-theme="e">
+			<div data-role="collapsible" data-collapsed="false">
+				<h3>학교기업 앱버튼</h3>					
+				<img src="appbutton_01.jpg" alt=""  style="width: 600px;">
+			</div>
+			<div data-role="collapsible">
+				<h3>사업개요</h3>
+				<p>
+					기업과 학생의 아이덴티티를 찾아주는 기업
+					대학교수진, 산업체 전문가, 관련학과 학생들이 기업에서 필요로 하는 솔루션과 콘텐츠를 함께 개발하여 제공합니다.
+
+					대표 : 총장 이재민
+					책임교수 : 장재웅 교수
+					사업분야
+					- 웹기반의 IT솔루션 개발
+					- AR/VR 모바일앱 개발
+					- 이러닝콘텐츠제작
+					- VR홈페이지 및 모바일페이지 제작
+					- CCC 3단계 현장실습 프로그램 운영
+				</p>
+			</div>
+			<div data-role="collapsible" >
+				<h3>조직도</h3>
+				<img src="appbutton1_org.jpg" alt="" style="width: 600px;">
+			</div>
+		</div>
+	</div>
+	<div data-role="footer" data-position="fixed" data-theme="b">
+		<h1>202206020 장세빈</h1>
+	</div>	
+	</div>
+
+	<div data-role="page" id="gallery"  data-theme="b">
+		<div data-role="header" data-position="fixed"  data-theme="b">
+			<a href="#home" data-icon="arrow-l" data-direction="reverse">처음</a>
+			<h1>학과 갤러리</h1>
+		</div>
+		<div data-role="content">
+            <ul class="picture">
+				<li><a href="1-1.jpg" rel="external"><img src="1-1.jpg" /></a></li>	
+				<li><a href="1-2.jpg" rel="external"><img src="1-2.jpg" /></a></li>	
+				<li><a href="1-3.jpg" rel="external"><img src="1-3.jpg" /></a></li>	
+				<li><a href="1-4.jpg" rel="external"><img src="1-4.jpg" /></a></li>	
+				<li><a href="1-5.jpg" rel="external"><img src="1-5.jpg" /></a></li>	
+				
+            </ul>
+		</div>
+		<div data-role="footer" data-position="fixed" data-theme="b">
+			<h1>202206020 장세빈</h1>
+		</div>		
+	</div>
+
+	<div data-role="page" id="gallery-js"  data-theme="b">
+		<div data-role="header" data-position="fixed"  data-theme="b">
+			<a href="#home" data-icon="arrow-l" data-direction="reverse">처음</a>
+			<h1>학과 갤러리</h1>
+		</div>
+		<div id="container">
+			<h3>아래 이미지를 클릭하세요</h3>
+			<img src="1-1.jpg" alt="photo" id="photo">
+		</div>
+		<ul id="gallery">
+			<li><img src="1-2.jpg" alt="thumbnail" /></li>	
+			<li><img src="1-3.jpg"  alt="thumbnail"/></li>	
+			<li><img src="1-4.jpg"  alt="thumbnail"/></li>	
+			<li><img src="1-5.jpg"  alt="thumbnail"/></li>	
+			
+		</ul>
+		<div data-role="footer" data-position="fixed" data-theme="b">
+			<h1>202206020 장세빈</h1>
+		</div>		
+	</div>
+
+	<div data-role="page" id="gallery-jquery"  data-theme="b">
+		<div data-role="header" data-position="fixed"  data-theme="b">
+			<a href="#home" data-icon="arrow-l" data-direction="reverse">처음</a>
+			<h1>학과 갤러리</h1>
+		</div>
+		<div data-role="content" class="gallery">
+			<h3>아래 이미지를 클릭하세요</h3>
+			<div class="main">
+				<img src="1-1.jpg" alt="1-1" />
+			</div>
+            <ul class="thumb">
+				<li><a href="1-2.jpg"><img src="1-2.jpg" /></a></li>	
+				<li><a href="1-3.jpg"><img src="1-3.jpg" /></a></li>	
+				<li><a href="1-4.jpg"><img src="1-4.jpg" /></a></li>	
+				<li><a href="1-5.jpg"><img src="1-5.jpg" /></a></li>	
+				
+            </ul>
+		</div>
+		<div data-role="footer" data-position="fixed" data-theme="b">
+			<h1>202206020 장세빈</h1>
+		</div>		
+	</div>
+</div>	
+<script>
+ 
+	var photo = document.getElementById("photo");
+	var thumbnail = document.querySelectorAll("#gallery > li > img");
+   
+	for ( var i = 0; i < thumbnail.length; i++ )
+	  thumbnail[i].addEventListener("click", function () {
+   
+		photo.setAttribute("src", this.getAttribute("src"));
+   
+	  });
+   
+</script>
+</body>
+
+</html>
