@@ -47,7 +47,7 @@ $(document).ready(function () {
     $.each(korea, function (j, k) {
         var _nx = korea[j].nx, _ny = korea[j].ny, region = korea[j].region,
             apikey = "aC1366Q9TsnFTopNEtA3XtcOSXWA%2BUfm0WRJaQMAZfZ3k0dm5olOMGNSSheNNLdX2CbuPHd%2FINCykSoMqld8DA%3D%3D",
-            ForecastGribURL = "http://apis.data.go.kr/1360000/VilageFcstInfoService_2.0/getVilageFcst";
+            ForecastGribURL = "https://apis.data.go.kr/1360000/VilageFcstInfoService_2.0/getVilageFcst";
             
         ForecastGribURL += "?ServiceKey=" + apikey;
         ForecastGribURL += "&base_date=" + today;
