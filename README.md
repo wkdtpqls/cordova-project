@@ -12,4 +12,4 @@
 |2023-10-10|<a href="https://github.com/wkdtpqls/cordova-project/tree/master/1010">6주차 레포트</a>|<a href="https://wkdtpqls.github.io/cordova-project/1010/minfo">1010</a>|
 |2023-10-31|<a href="https://github.com/wkdtpqls/cordova-project/tree/master/1031">7주차 레포트</a>|<a href="https://wkdtpqls.github.io/cordova-project/1031/dokdo-intro">1031</a>|
 |2023-11-07|<a href="https://github.com/wkdtpqls/cordova-project/tree/master/1107/README.md">8주차 레포트</a>|<a href="https://wkdtpqls.github.io/cordova-project/1107/bsks-intro">1031</a>|
-|2023-11-14|<a href="https://github.com/wkdtpqls/cordova-project/tree/master/1114/README.md">9주차 레포트</a>|<a href="https://wkdtpqls.github.io/cordova-project/1114/naver-app">1031</a>|
+|2023-11-14|<a href="https://github.com/wkdtpqls/cordova-project/tree/master/1114/README.md">9주차 레포트</a>|<a href="https://wkdtpqls.github.io/cordova-project/1114/naver-app">1114</a>|
