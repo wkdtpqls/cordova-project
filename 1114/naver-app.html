@@ -9,6 +9,8 @@
 	<script src="./libs/jquery-1.11.1.min.js"></script>
 	<script src="./libs/jquery.mobile-1.4.5.min.js"></script>
 	<script src="./libs/acfbc5814d.js" crossorigin="anonymous"></script>
+    <script src="./libs/jquery-3.6.4.min.js"></script>
+	<script src="weather-ajax.js"></script> 
 </head>
 <link rel="stylesheet" href="style.css">
 <body>
@@ -33,7 +35,7 @@
 	
 	<div data-role="page" id="intro" data-theme="b">
 		<div data-role="header" data-theme="b">
-			<a href="#home" data-icon="arrow-l" data-direction="reverse">&nbsp;</a>			
+			<a href="#home" data-icon="home" data-direction="reverse">홈</a>			
 			<h1>네이버 소개</h1>
 		</div>
 		<div data-role="content">
@@ -143,6 +145,7 @@
 	
 	<div data-role="page" id="wizard3-1">
 		<div data-role="header">
+			<a href="#home" data-icon="home" data-direction="reverse">홈</a>
 			<h1>Teams</h1>
 			<p class="team_text">서로 다른 사람들이 모여 한 방향으로 나아갑니다.</p>
 		</div>
@@ -170,13 +173,14 @@
 			</p>
 		</div>
 		<div data-role="footer">
-			<a href="#home"  data-direction="reverse"><i class="fa-solid fa-arrow-left"></i></a>
+			<!-- <a href="#home"  data-direction="reverse"><i class="fa-solid fa-arrow-left"></i></a> -->
 			<a href="#wizard3-2" data-rel="dialog" data-transition="slide"><i class="fa-solid fa-arrow-right"></i></a>
 		</div>
 	</div>
 
 	<div data-role="page" id="wizard3-2">
 		<div data-role="header">
+			<a href="#home" data-icon="home" data-direction="reverse">홈</a>
 			<h1>Teams</h1>
 			<p class="team_text">서로 다른 사람들이 모여 한 방향으로 나아갑니다.</p>
 		</div>
@@ -207,12 +211,13 @@
 			</p>
 		</div>
 		<div data-role="footer">
-			<a href="#home"  data-direction="reverse"><i class="fa-solid fa-arrow-left"></i></a>
+			<a href="#wizard3-1"  data-direction="reverse"><i class="fa-solid fa-arrow-left"></i></a>
 			<a href="#wizard3-3" data-rel="dialog" data-transition="slide"><i class="fa-solid fa-arrow-right"></i></a>
 		</div>
 	</div>
 	<div data-role="page" id="wizard3-3">
 		<div data-role="header">
+			<a href="#home" data-icon="home" data-direction="reverse">홈</a>  
 			<h1>Teams</h1>
 			<p class="team_text">서로 다른 사람들이 모여 한 방향으로 나아갑니다.</p>
 		</div>
@@ -234,38 +239,53 @@
 				<b>블로그는 언제 처음 시작하셨는지, 계기는 무엇이었는지 궁금합니다.</b><br>
 				처음 시작한 것이 2009년이었는데, 그 이후에도 꾸준히 블로그에 기록을 해 오고 있어요. 사실 멋있는 계기는 아니었는데요. 
 				대학교 때 대외활동을 시작해 보려는데, 그때는 모든 대외활동 신청서마다 꼭 블로그 주소를 적는 항목이 있었어요. 
-				 그러던 와중에 <슈퍼스타K 1>이라는 
-				  프로그램이 시작했길래 시청 후기를 블로그에 남겼는데 갑자기 폭발적인 반응이 오는 거예요. 대중의 관심사가 블로그에 
-				  어떻게 반영되는지 직접 경험할 수 있는 순간이었죠.			
-				</p>
+				그러던 와중에 <슈퍼스타K 1>이라는 
+				프로그램이 시작했길래 시청 후기를 블로그에 남겼는데 갑자기 폭발적인 반응이 오는 거예요. 대중의 관심사가 블로그에 
+				어떻게 반영되는지 직접 경험할 수 있는 순간이었죠.			
+			</p>
 		</div>
 		<div data-role="footer">
-			<a href="#home"  data-direction="reverse"><i class="fa-solid fa-arrow-left"></i></a>
-			<a href="#wizard3-2" data-rel="dialog" data-transition="slide"><i class="fa-solid fa-arrow-right"></i></a>
+			<a href="#wizard3-2"  data-direction="reverse"><i class="fa-solid fa-arrow-left"></i></a>
+			<!-- <a href="#wizard3-1" data-rel="dialog" data-transition="slide"><i class="fa-solid fa-arrow-right"></i></a> -->
 		</div>
 	</div>
 
-	<div data-role="page" id="gallery"  data-theme="b">
-		<div data-role="header" data-position="fixed"  data-theme="b">
-			<a href="#home" data-icon="arrow-l" data-direction="reverse">처음</a>
-			<h1>독도 갤러리</h1>
+	<div data-role="page" id="gallery">
+		<div data-role="header" data-position="fixed">
+			<a href="#home" data-icon="home" data-direction="reverse">홈</a>
+			<h1>날씨</h1>
 		</div>
 		<div data-role="content">
-            <ul class="picture">
-				<li><a href="4-1.jpg" rel="external"><img src="4-1.jpg" /></a></li>	
-				<li><a href="4-2.jpg" rel="external"><img src="4-2.jpg" /></a></li>	
-				<li><a href="4-3.jpg" rel="external"><img src="4-3.jpg" /></a></li>	
-				<li><a href="4-4.jpg" rel="external"><img src="4-4.jpg" /></a></li>	
-				<li><a href="4-5.jpg" rel="external"><img src="4-5.jpg" /></a></li>	
-				<li><a href="4-6.jpg" rel="external"><img src="4-6.jpg" /></a></li>	
-				<li><a href="4-7.jpg" rel="external"><img src="4-7.jpg" /></a></li>	
-				<li><a href="4-8.jpg" rel="external"><img src="4-8.jpg" /></a></li>	
-				<li><a href="4-9.jpg" rel="external"><img src="4-9.jpg" /></a></li>	 
-				<li><a href="4-10.jpg" rel="external"><img src="4-10.jpg" /></a></li>    
-				<li><a href="4-11.jpg" rel="external"><img src="4-11.jpg" /></a></li>   
-				<li><a href="4-12.jpg" rel="external"><img src="4-12.jpg" /></a></li>
-            </ul>
+			<div class="vis-wether">
+				<h1>오늘의 전국 날씨는?</h1>		
+				<p id="currentDateTime"></p> <!-- Added a paragraph element to display date and time -->
+				<ul class="list-group list-group-flush weather">
+					<!-- <li class="list-group-item weather"></li> -->
+				</ul>
+				<p class="text-3"><span>*</span> 3시간 마다 기상 정보가 업데이트 됩니다.</p>
+			</div>
+			<script type="text/javascript">
+				// JavaScript code to get and display the current date and time
+				var today = new Date();
+				var year = today.getFullYear();
+				var month = today.getMonth() + 1;
+				var day = today.getDate();
+				var hours = today.getHours();
+				var minutes = today.getMinutes();
+		
+				// Add leading zeros if needed
+				month = month < 10 ? '0' + month : month;
+				day = day < 10 ? '0' + day : day;
+				hours = hours < 10 ? '0' + hours : hours;
+				minutes = minutes < 10 ? '0' + minutes : minutes;
+		
+				var formattedDateTime = '현재 시각 : '+year + '년 ' + month + '월 ' + day + '일 ' + hours + ':' + minutes;
+		
+				// Update the content of the paragraph element with the formatted date and time
+				document.getElementById('currentDateTime').innerText = formattedDateTime;
+			</script>
 		</div>
+		
 		<div data-role="footer" data-position="fixed" data-theme="b">
 			<h1>장세빈</h1>
 		</div>		
